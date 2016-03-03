@@ -22,8 +22,8 @@ void setup() {
 
   delay(10);
 
-  pinMode(led_Pin, OUTPUT);
-  digitalWrite(led_Pin,HIGH);
+  // pinMode(led_Pin, OUTPUT);
+  // digitalWrite(led_Pin,HIGH);
 
 }
 
