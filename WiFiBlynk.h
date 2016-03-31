@@ -12,11 +12,11 @@ WidgetLED ledState(V1);
 
 
 BLYNK_READ(V0) {
-  if(digitalRead(outletPin)) {
-    Blynk.virtualWrite(V0, "ON");
-    ledState.on();
-  } else {
-    Blynk.virtualWrite(V0, "OFF");
-    ledState.off();
+  if(digitalRead(outletPin)) {//如果检测到引脚为高电平
+    Blynk.virtualWrite(V0, "ON");//设置状态为ON
+    ledState.on();//设置手机上的小灯亮起
+  } else {//否则
+    Blynk.virtualWrite(V0, "OFF");//设置状态为OFF
+    ledState.off();//设置手机上的小灯熄灭
   }
 }
